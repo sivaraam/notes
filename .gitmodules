@@ -1,0 +1,3 @@
+[submodule "database-engineering/postgres/misc/sakila"]
+	path = database-engineering/postgres/misc/sakila
+	url = ./database-engineering/postgres/misc/sakila/
