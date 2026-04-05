@@ -2,11 +2,12 @@
 
 ## PG bouncer
 
-- Amount of connections we can open with Postgres is limited. 
+- The amount of connections we can open with Postgres is limited. 
 - Opening a new connection requires some I/O overhead.
 - Connection pooling helps reduce overhead.
-- Connection pooling has a relation with background worker pool in Postgres.
-- Connection pooling is programmatic way. PG bouncer is a software to achieve this.
+- Connection pooling has a relation with the background worker pool in Postgres.
+  - DDG summary - Connection pooling in PostgreSQL allows multiple client applications to share a limited number of database connections, improving resource efficiency and performance. A worker pool can manage these connections, ensuring that each worker can quickly access a connection without the overhead of establishing a new one for every request.
+- Connection pooling is a programmatic way. PG bouncer is a software to achieve this.
 - Alternative to connection pooling is to use PG bouncer to manage connections automatically.
 - PG bouncer can be configured to only connect to specific DB, user creds. Then it runs in port 6432. So, applications connect to 6432 instead of 5432. PG bouncer manages the connections.
 - It can be configured to limit the number of connections.
