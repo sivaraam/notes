@@ -1,9 +1,15 @@
 # Session 16 - Array / Hash map / Set / Zset  
 
+- Redis supports durable storage also. Also, support replication etc.
 - Type is not explicitly in Redis. It is set based on
   how first insertion is done to the key.
 - Images can be stored in Redis as values when they are
   base64 encoded.
+- Valkey is a fork of Redis that sprung due to its intermediate switch to SSPL
+  - Ref: https://betterstack.com/community/comparisons/redis-vs-valkey/
+  - Since Mar 2025, it switched back over to AGPL v3
+    - Ref: https://lwn.net/Articles/1019686/
+
 
 ## Array
 
